@@ -696,9 +696,6 @@ body.editing .bk .num{z-index:6}
          <svg class="fl" style="left:28px" viewBox="0 0 24 44" aria-hidden="true"><path d="M12 2C6 12 4 20 12 28 20 20 18 12 12 2z" fill="#ff9a2e"/><path d="M12 12C9 18 9 22 12 26 15 22 15 18 12 12z" fill="#ffe27a"/><path d="M12 28V42" stroke="#f6e6dc" stroke-width="3" stroke-linecap="round"/></svg>
          <svg class="fl" style="left:140px" viewBox="0 0 24 44" aria-hidden="true"><path d="M12 2C6 12 4 20 12 28 20 20 18 12 12 2z" fill="#ff9a2e"/><path d="M12 12C9 18 9 22 12 26 15 22 15 18 12 12z" fill="#ffe27a"/><path d="M12 28V42" stroke="#f6e6dc" stroke-width="3" stroke-linecap="round"/></svg>
          <div class="num" data-k="bk-num">21</div>
-         <div class="fc"><div class="photo" data-p="bk-face"></div>
-           <svg class="hat" viewBox="0 0 30 36" aria-hidden="true"><path d="M15 2L27 32H3Z" fill="#f6a5b5"/><path d="M9 20L21 14M7 27L24 20" stroke="#fff" stroke-width="3"/><circle cx="15" cy="3" r="3" fill="#ffd45a"/></svg>
-         </div>
        </div>
        <span class="w" style="left:20%;top:66%" data-k="bk-5">zine</span>
        <span class="w" style="left:66%;top:70%" data-k="bk-6">with</span>
@@ -771,7 +768,7 @@ body.editing .bk .num{z-index:6}
   var tt;function toast(m){var t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){t.classList.remove('show')},2600)}
 
   $$('[data-k]').forEach(function(el){var k=el.getAttribute('data-k');if(store.t[k]!=null)el.textContent=store.t[k]});
-  var DEF={"cal-photo": "images/cal-photo.jpg", "bw-p1": "images/bw-p1.jpg", "bw-p2": "images/bw-p2.jpg", "pb-1": "images/pb-1.jpg", "pb-2": "images/pb-2.jpg", "pb-3": "images/pb-3.jpg", "sg-1": "images/sg-1.jpg", "sg-2": "images/sg-2.jpg", "sg-3": "images/sg-3.jpg", "sg-4": "images/sg-4.jpg", "st-photo": "images/st-photo.jpg", "fv-1": "images/fv-1.jpg", "fv-2": "images/fv-2.jpg", "fv-3": "images/fv-3.jpg", "fv-4": "images/fv-4.jpg", "fv-5": "images/fv-5.jpg", "fv-6": "images/fv-6.jpg", "cm-photo": "images/cm-photo.jpg"};
+  var DEF={"cal-photo":"images/cal-photo.jpg","bw-p1":"images/bw-p1.jpg","bw-p2":"images/bw-p2.jpg","pb-1":"images/pb-1.jpg","pb-2":"images/pb-2.jpg","pb-3":"images/pb-3.jpg","sg-1":"images/sg-1.jpg","sg-2":"images/sg-2.jpg","sg-3":"images/sg-3.jpg","sg-4":"images/sg-4.jpg","st-photo":"images/st-photo.jpg","fv-1":"images/fv-1.jpg","fv-2":"images/fv-2.jpg","fv-3":"images/fv-3.jpg","fv-4":"images/fv-4.jpg","fv-5":"images/fv-5.jpg","fv-6":"images/fv-6.jpg","cm-photo":"images/cm-photo.jpg","cv-photo":"images/cv-photo.jpg","sg-5":"images/sg-5.jpg"};
   var POS={"cal-photo": "62% 40%", "bw-p1": "45% 38%", "bw-p2": "50% 33%", "pb-1": "53% 40%", "pb-2": "70% 45%", "pb-3": "50% 33%", "sg-1": "50% 50%", "sg-2": "50% 50%", "sg-3": "50% 50%", "sg-4": "50% 50%", "st-photo": "55% 45%", "fv-1": "70% 45%", "fv-2": "62% 40%", "fv-3": "48% 35%", "fv-4": "50% 33%", "fv-5": "53% 40%", "fv-6": "55% 45%", "cm-photo": "48% 35%"};
   $$('[data-p]').forEach(function(el){var k=el.getAttribute('data-p');var u=store.p[k]||DEF[k];if(u)el.style.backgroundImage='url('+u+')';if(POS[k])el.style.backgroundPosition=POS[k]});
 
